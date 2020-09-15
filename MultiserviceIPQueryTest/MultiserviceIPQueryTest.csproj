@@ -14,8 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Mocks\" />
-    <Folder Include="Tests\" />
+    <ProjectReference Include="..\MultiserviceIPQuery\MultiserviceIPQuery.csproj" />
   </ItemGroup>
 
 </Project>

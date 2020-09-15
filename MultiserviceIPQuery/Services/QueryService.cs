@@ -52,7 +52,7 @@ namespace MultiserviceIPQuery.Services
         public bool IsValidIPAddress(string ipAddress)
         {
             Regex check = new Regex(Constants.IPAddressRegEx); 
-            return check.IsMatch(ipAddress, 0);
+            return ipAddress != null ? check.IsMatch(ipAddress, 0) : false;
         }
 
         private bool IsSupportedService(string serviceName)
